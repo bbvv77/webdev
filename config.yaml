@@ -1,0 +1,16 @@
+server:
+    port: ":7575"
+web:
+    username: "admin"
+    password: "admin"
+devices:
+    - id: wwan0
+      modem_imei: "867184033575014"
+      usb_path: /sys/bus/usb/devices/1-1
+      interface: wwan0
+      control_device: /dev/cdc-wdm0
+      at_port: /dev/ttyUSB2
+      device_backend: qmi
+      sms_enabled: true
+      network_enabled: false
+      vowifi_enabled: false
